@@ -1,0 +1,307 @@
+@media screen and (max-width: 980px) {
+
+	/************************************************************************************
+	STRUCTURE
+	*************************************************************************************/
+	.pagewidth {
+		max-width: 94%;
+	}
+		
+	/* content */
+	#content {
+		padding: 7% 0 5%;
+		width: 67.8%;
+	}
+	
+	/* sidebar */
+	#sidebar {
+		padding: 7% 0 5%;
+		width: 26.2%;
+	}
+	#sidebar .secondary {
+		width: 47.4%;
+	}
+	
+	/* main navigation */
+	#main-nav-wrap {
+		max-width: 100%;
+	}
+		
+}
+
+@media screen and (max-width: 760px) {
+
+	/************************************************************************************
+	STRUCTURE
+	*************************************************************************************/
+	#content {
+		width: 100%;
+		max-width: 100%;
+		float: none;
+		clear: both;
+	}
+	
+	/* sidebar */
+	#sidebar {
+		width: 100%;
+		max-width: 100%;
+		float: none;
+		clear: both;
+	}
+	
+	/************************************************************************************
+	SITE DESCRIPTION
+	*************************************************************************************/
+	#site-description {
+		display: none;
+	}
+
+	/************************************************************************************
+	MAIN NAV (MOBILE)
+	*************************************************************************************/
+	/* menu icon */
+	#menu-icon {
+		background: #eee url(images/menu-icon.png) no-repeat center center;
+		position: relative;
+		width: 36px;
+		height: 32px;
+		display: block;
+		float: right;
+		cursor: pointer;
+		
+		border-radius: 5px;
+	}
+	
+	/* main nav */
+	#main-nav {
+		clear: both;
+		position: absolute !important;
+		top: 32px !important;
+		right: 0 !important;
+		width: 160px;
+		z-index: 1000;
+		padding: 10px 5px;
+		background: #fff !important;
+		border: solid 1px #999 !important;
+		display: none; /* visibility will be toggled with jquery */
+		
+		box-shadow: 1px 2px 0 rgba(0,0,0,.2);
+		
+		border-radius: 5px;
+	}
+	#main-nav li {
+		clear: both;
+		float: none;
+		margin: 5px 0 5px 10px !important;
+		padding: 0 !important;
+		border: none !important;
+		box-shadow: none !important;
+	}
+	#main-nav a, 
+	#main-nav ul a {
+		font: inherit !important;
+		text-transform: inherit !important;
+		background: none !important;
+		width: auto !important;
+		display: inline !important;
+		padding: 0 !important;
+		color: #666 !important;
+		border: none !important;
+
+		text-shadow: none !important;
+		box-shadow: none !important;
+	}
+	#main-nav a:hover, 
+	#main-nav ul a:hover {
+		background: none !important;
+		color: #000 !important;
+	}
+	
+	/* dropdown */
+	#main-nav ul {
+		position: static;
+		display: block;
+		margin: 0;
+		padding: 0;
+		background: none;
+		border: none;
+		border-radius: 0;
+		box-shadow: none;
+	}
+	
+	/************************************************************************************
+	SLIDER
+	*************************************************************************************/
+	#slider {
+		font-size: 100%;
+	}
+	/* default slide */
+	.slider-default .slide-image {
+		float: none;
+		margin: 0 0 10px;
+	}
+	.slider-default .slide-content {
+		position: static;
+		padding-top: 0;
+	}
+	.slider-default .post-video {
+		max-width: 100%;
+		width: 100%;
+	}
+
+	/* image caption slide */
+	.slider-image-caption .slide-content {
+		position: static;
+		font-size: 100%;
+	}
+
+	/************************************************************************************
+	POST
+	*************************************************************************************/
+	/* list large image */
+	.list-large-image .post-image {
+		float: none;
+		margin-right: 0;
+	}
+	.list-large-image .post-content {
+		overflow: visible;
+		float: none;
+	}
+	
+}
+
+@media screen and (max-width: 600px) {
+	
+	/************************************************************************************
+	POST
+	*************************************************************************************/
+	/* grid4 */
+	.grid4 .post,
+	.grid3 .post {
+		width: 100%;
+		margin-left: 0;
+		float: none;
+	}
+
+	/************************************************************************************
+	SLIDER
+	*************************************************************************************/
+	/* hide slider direction nav on mobile */
+	.flex-direction-nav {
+		display: none;
+	}	
+
+	/************************************************************************************
+	PORTFOLIO
+	*************************************************************************************/
+	.single .portfolio .post-image {
+		margin-right: 0;
+		float: none;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+
+	/************************************************************************************
+	GRID
+	*************************************************************************************/
+	.col4-1,
+	.col4-2, .col2-1,
+	.col4-3,
+	.col3-1,
+	.col3-2	 {
+		margin-left: 0 !important;
+		width: 100% !important;
+		max-width: 100% !important;
+	}
+
+	/************************************************************************************
+	HEADER
+	*************************************************************************************/
+	/* site description */
+	.fixed-header #site-description {
+		display: none;
+	}
+		
+	/* social widget */
+	.social-widget {
+		position: static;
+		float: none;
+		margin: 0;
+		padding: 15px 0 0;
+	}
+
+	/* searchform */
+	#header #searchform {
+		top: 15px;
+	}	
+
+	/************************************************************************************
+	POST
+	*************************************************************************************/
+	/* post */
+	.post {
+		width: auto !important;
+		max-width: 100% !important;
+		margin-left: 0 !important;
+		float: none !important;
+	}
+	
+
+	/************************************************************************************
+	POST NAV
+	*************************************************************************************/
+	.post-nav .prev, 
+	.post-nav .next {
+		display: block;
+		width: 100%;
+		clear: both;
+		margin-bottom: 10px;
+	}
+	
+	/************************************************************************************
+	COMMENTS
+	*************************************************************************************/
+	.commentlist {
+		padding-left: 0;
+	}
+	.commentlist .commententry {
+		clear: left;
+	}
+	.commentlist .avatar {
+		float: left;
+		width: 40px;
+		height: 40px;
+		margin: 0 10px 10px 0;
+	}
+
+	/************************************************************************************
+	FOOTER
+	*************************************************************************************/
+	#footer-logo {
+		position: static;
+	}
+	.footer-nav {
+		padding: 0;
+	}
+	
+	/************************************************************************************
+	WOOCOMMERCE SUPPORT
+	*************************************************************************************/
+	.woocommerce #content div.product div.images,
+	.woocommerce #content div.product div.summary {
+		float: none !important;
+		width: 100% !important;
+	}
+
+}
+
+@media screen and (min-width: 761px) {
+
+	/* ensure #main-nav is visible on desktop version */
+	#main-nav {
+		display: block !important;
+	}
+
+}
